@@ -1,0 +1,826 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.letra {
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: #0c0a0a;
+    text-align: center;
+    grid-column: 2;
+}
+.letra p{
+    text-align: center;
+}
+
+.fotoInicio{
+    margin-top: 50px;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.contenedor {
+    
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.contenedor h2{
+    color: #faf8f8;
+}
+
+.contenedor h2:hover {
+    color: #22e68a;/* Cambia el color al pasar el mouse */
+}
+.bg_animate {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #005C98, #505BDA);
+    position: relative;
+    overflow: hidden;
+}
+
+.header_nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header_nav .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.header_nav h1 {
+    color: aliceblue;
+    font-family: 'Gagalin';
+    font-size: 40px;
+}
+
+.header_nav nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+h2 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.banner_title h2 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.banner_title .llamanos {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    background: #1A2849;
+    padding: 20PX;
+}
+
+.banner img img {
+    width: 800px;
+    display: block;
+
+
+}
+
+.banner_img {
+    width: 40px;
+    height: 40px;
+    animation: movimiento 2.5s linear infinite;
+
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    margin-top: 300px;
+    border-radius: 50%;
+    border: 2px solid rgb(42, 9, 228);
+}
+
+
+
+
+/* burbujas */
+
+.burbuja {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+    left: 5%;
+
+    animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    left: 400%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(4) {
+    width: 40px;
+    height: 40px;
+    left: 100%;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+
+
+
+.burbuja:nth-child(6) {
+    width: 60px;
+    height: 60px;
+    left: 90%;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+
+
+.burbuja:nth-child(7) {
+    width: 80px;
+    height: 80px;
+    left: 700%;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.burbuja:nth-child(8) {
+    width: 50px;
+    height: 50px;
+    left: 900%;
+    animation-duration: 2.5s;
+    animation-delay: 2.5s;
+}
+
+.burbuja:nth-child(9) {
+    width: 50px;
+    height: 50px;
+    left: 800%;
+    animation-duration: 2.5s;
+    animation-delay: 2.5s;
+}
+
+.burbuja:nth-child(10) {
+    width: 40px;
+    height: 40px;
+    left: 1100%;
+    animation-duration: 3.5s;
+    animation-delay: 3.5s;
+}
+
+.burbuja:nth-child(11) {
+    width: 70px;
+    height: 70px;
+    left: 1300%;
+    animation-duration: 2.5s;
+    animation-delay: 2.5s;
+}
+
+.burbuja:nth-child(12) {
+    width: 50px;
+    height: 50px;
+    left: 1500%;
+    animation-duration: 1.3s;
+    animation-delay: 1.3s;
+}
+
+.burbuja:nth-child(13) {
+    width: 40px;
+    height: 40px;
+    left: 1560%;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(14) {
+    width: 50px;
+    height: 50px;
+    left: 1800%;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(5) {
+    width: 200px;
+    height: 200px;
+    left: 1000%;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.burbuja:nth-child(15) {
+    width: 200px;
+    height: 200px;
+    left: 1100%;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+
+@keyframes burbujas {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateX(30px);
+    }
+
+    50% {
+        opacity: .4;
+    }
+
+    100% {
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* efecto de los botones */
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body {
+    font-family: 'FontAwesome', sans-serif;
+    background-color: #bccdde;
+  }*/
+
+.container-buttons {
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    /* background-color: #FFF; */
+    min-width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-buttons a {
+    width: 250px;
+    height: 65px;
+    display: block;
+    border-radius: 0%;
+    /* line-height: 70px; */
+    color: #FFF;
+    background-color: #000;
+    text-decoration: none;
+    overflow: hidden;
+    text-align: center;
+    font-size: 2.2rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .9);
+}
+
+.container-buttons a::before {
+    content: "\f2c6";
+    display: block;
+    margin: 19px 0;
+    transition: all .5s ease-in-out;
+}
+
+.container-buttons a:hover::before {
+    margin-top: -37px;
+}
+
+.container-buttons a::after {
+    content: 'Realiza tu pedido ya! ';
+    font-size: 1.5rem;
+    display: block;
+    color: rgb(223, 201, 6);
+
+}
+
+.container-buttons .llamanos {
+    background: #0c204e;
+}
+
+.container-buttons .llamanos::before {
+    content: 'Realiza tu pedido ya! ';
+    font-size: 1.5rem;
+
+}
+/* boton2 */
+
+.container-buttons .llamanos1 {
+    background: #33b419;
+}
+
+.container-buttons .llamanos1::before {
+    content: 'Visita nuestra galería!';
+   color: brown;
+    font-size: 1.5rem;
+}
+
+.container-buttons .llamanos1::after {
+    content: 'Visita nuestra galería!';
+    font-size: 1.5rem;
+    display: block;
+    color: rgb(223, 201, 6);
+
+}
+
+/* boton3 */
+
+.container-buttons .llamanos2 {
+    background: #c9e71c;
+}
+
+.container-buttons .llamanos2::before {
+    content: 'Nuestros inicios!';
+    color: rgb(91, 42, 206);
+    font-size: 1.5rem;
+}
+
+.container-buttons .llamanos2::after {
+    content: 'Nuestros inicios!';
+    font-size: 1.5rem;
+    display: block;
+    color: rgb(214, 41, 191);
+
+}
+
+
+/* Formulario */
+
+body {
+    background: linear-gradient(to right, #0b67a5, #5d65c5);
+}
+
+.titulof{
+    color: #101150;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 50px;
+    text-align: center;
+    font-family: cursive;
+    
+}
+ .formulario{
+   background-color: #36c46c;
+ }
+.titulof:hover {
+    color:  #33b419;; /* Cambia el color del texto al pasar el mouse */
+  }
+
+form {
+
+    width: 300px;
+    padding: 35px;
+    border-radius: 10px;
+    margin-left:60%;
+     margin-top: 4%;
+    background-color: transparent;
+    background-color: rgba(187, 231, 245, 0.5);
+    text-align: center;
+
+}
+
+form label {
+
+    display: block;
+    width: 100%;
+    height: 24px;
+    font-weight: bold;
+    color: rgb(0, 47, 255);
+    font-size: 18px;
+
+}
+
+form label:hover {
+    color:  #e60a0a;; /* Cambia el color del texto al pasar el mouse */
+  }
+
+
+form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form input:hover {
+    background-color: #78caf0; /* Cambia el color de fondo al pasar el mouse */
+    color: #070707; /* Cambia el color del texto al pasar el mouse */
+  }
+
+.boton {
+
+    margin: 10px 2px;
+    text-align: center;
+    background-color:  #092dce;
+    width: 70px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e60a0a;
+    color: rgb(5, 5, 5);
+    transform: scale(1.1);
+}
+
+
+
+@keyframes movimiento {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.imagenFormulario img {
+    animation: movimiento 3s ease-in-out infinite;
+}
+
+/* GALERIA */
+
+body {
+    margin: 30;
+    padding: 30;
+
+    background-color: rgb(76, 237, 237);
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: 20% 55% 20%;
+    grid-template-rows: auto 1fr;
+}
+
+main {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto 1fr;
+    text-align: center;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+    font-size: 17px;
+
+}
+
+ul li a {
+    color: rgb(35, 11, 218);
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+
+}
+
+.lenguajes {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+
+
+}
+
+.lenguajes li a img {
+
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+
+
+
+
+.zoom-image {
+    transition: transform 0.3s ease;
+    /* Agrega una transición suave al cambio de escala */
+}
+
+.zoom-image:hover {
+    transform: scale(1.2);
+    /* Aumenta el tamaño de la imagen al 120% */
+}
+
+li img {
+    width: 50px;
+    height: 50px;
+
+    margin-top: 2px;
+}
+
+header .name_nombre {
+    margin-left: 50px;
+    margin-top: 60px;
+    font-family: 'Lucida Handwriting', cursive;
+    font-style: italic;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: center;
+    color: rgb(35, 11, 218);
+
+
+}
+.name_nombre:hover{
+    background-color: rgb(235, 70, 51);
+}
+.info_personal {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    text-align: center;
+    font-family: 'Lucida Handwriting', cursive;
+    font-style: italic;
+    margin-top: 14px;
+    font-size: 30px;
+    color: rgb(35, 11, 218);
+}
+
+.info_personal:hover {
+    background-color: rgb(47, 231, 30);
+}
+
+
+
+.foto_principal {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+p {
+    text-align: left;
+    font-size: 17px;
+}
+
+.foto_principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#imagen {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 50px;
+
+}
+
+#sena{
+    margin-top:100px;
+}
+
+.h2section1{
+    font-family: cursive;
+   text-align: center;
+   grid-column: 2;
+}
+
+
+.h2section1:hover {
+    color: #e2cc09; /* Cambia el color al pasar el mouse */
+}
+
+.lenguajes li a {
+    font-family: cursive;
+    transition: font-size 0.3s, color 0.3s; 
+    font-size: 1em;
+}
+
+.lenguajes li a:hover{
+    transition: font-size 0.3s, color 0.3s;
+    font-size: 2em; 
+}
+
+.lenguajes li a img {
+    width: 300px;
+    height: 300px;
+}
+
+.whatsapp {
+    margin-left: 1000px;
+    margin-top: -250px;
+     
+}
+.whatsapp img{
+    
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    
+}
+  
+.whatsapp:hover img {
+    transform: scale(1.2);
+  }
+  
+  
+
+
+  @media(min-width: 1440px) and (max-width: 1920px){
+    body{
+        font-size: 3em;
+        
+    }
+
+
+}
+
+@media(min-width: 725px) and (max-width: 789px){
+   
+
+    .contenedor h2{
+        font-size:40px;
+        
+    }
+     
+    .container-buttons a {
+        width: 150px;
+        height: 50px;
+        font-size: 10px;
+        margin-top: 160px;
+        display: inline-block;
+        margin-top: 160px;
+        margin-right: 10px; 
+        
+    }
+    .container-buttons .llamanos::before {
+        content: 'Realiza tu pedido ya! ';
+        font-size: 0.8rem;
+    }
+
+    .container-buttons .llamanos1::before {
+        content: 'Visita nuestra galeria! ';
+        font-size: 0.8rem;
+    }
+
+    .container-buttons .llamanos2::before {
+        content: 'Nuestros inicios! ';
+        font-size: 0.8rem;
+    }
+
+    .container-buttons .llamanos::after {
+        content: 'Realiza tu pedido ya! ';
+        font-size: 0.9rem;
+      
+    }
+
+    .container-buttons .llamanos1::after {
+        content: 'visita nuestra galeria! ';
+        font-size: 0.9rem;
+      
+    }
+
+    .container-buttons .llamanos2::after {
+        content: 'Nuestros inicios! ';
+        font-size: 0.9rem;
+        
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        margin-top: 160px;
+        
+    }
+    
+
+    .whatsapp {
+        margin-left: 600px;
+        margin-top: -180px;
+         
+    }
+
+
+
+    header{
+        display: grid;
+        font-size: 0.1em;
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Galeria */
+
+    .h2section1{
+        font-size: 40px;
+    }
+
+    .lenguajes li a {
+        
+       
+        font-family: cursive;
+        transition: font-size 0.3s, color 0.3s; 
+        font-size: 1em;
+       
+
+    }
+    
+    .lenguajes li a:hover{
+        transition: font-size 0.3s, color 0.3s;
+        font-size: 2em; 
+    }
+    
+    .lenguajes li a img {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .h3styles {
+        font-size: 20px; 
+    }
+
+    .h2section1{
+        font-size: 30px; 
+    }
+}
+  
+  
+
+
+
+
+
+

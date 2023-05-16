@@ -1,0 +1,294 @@
+body {
+    background: linear-gradient(to right, #0b67a5, #5d65c5);
+}
+
+.titulof{
+    color: #101150;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 50px;
+    text-align: center;
+    font-family: cursive;
+    
+}
+ .formulario{
+   background-color: #36c46c;
+ }
+.titulof:hover {
+    color:  #33b419;; /* Cambia el color del texto al pasar el mouse */
+  }
+
+form {
+
+    width: 250px;
+    padding: 35px;
+    border-radius: 10px;
+    margin-left:350px;
+     margin-top: 4%;
+    background-color: transparent;
+    background-color: rgba(187, 231, 245, 0.5);
+    text-align: center;
+
+}
+
+form label {
+
+    display: block;
+    width: 100%;
+    height: 24px;
+    font-weight: bold;
+    color: rgb(0, 47, 255);
+    font-size: 18px;
+
+}
+
+form label:hover {
+    color:  #e60a0a;; /* Cambia el color del texto al pasar el mouse */
+  }
+
+
+form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form input:hover {
+    background-color: #78caf0; /* Cambia el color de fondo al pasar el mouse */
+    color: #070707; /* Cambia el color del texto al pasar el mouse */
+  }
+
+.boton {
+
+    margin: 10px 2px;
+    text-align: center;
+    background-color:  #092dce;
+    width: 70px;
+    height: 30px;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e60a0a;
+    color: rgb(5, 5, 5);
+    transform: scale(1.1);
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+.imagenFormulario img {
+    animation: movimiento 3s ease-in-out infinite;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 140px;  
+    
+}
+
+
+    
+
+/* burbujas */
+
+.burbuja {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+    left: 5%;
+
+    animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    left: 400%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(4) {
+    width: 40px;
+    height: 40px;
+    left: 100%;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+
+
+
+.burbuja:nth-child(6) {
+    width: 60px;
+    height: 60px;
+    left: 90%;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+
+
+.burbuja:nth-child(7) {
+    width: 80px;
+    height: 80px;
+    left: 700%;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.burbuja:nth-child(8) {
+    width: 50px;
+    height: 50px;
+    left: 900%;
+    animation-duration: 2.5s;
+    animation-delay: 2.5s;
+}
+
+.burbuja:nth-child(9) {
+    width: 50px;
+    height: 50px;
+    left: 800%;
+    animation-duration: 2.5s;
+    animation-delay: 2.5s;
+}
+
+.burbuja:nth-child(10) {
+    width: 40px;
+    height: 40px;
+    left: 1100%;
+    animation-duration: 3.5s;
+    animation-delay: 3.5s;
+}
+
+.burbuja:nth-child(11) {
+    width: 70px;
+    height: 70px;
+    left: 1300%;
+    animation-duration: 2.5s;
+    animation-delay: 2.5s;
+}
+
+.burbuja:nth-child(12) {
+    width: 50px;
+    height: 50px;
+    left: 1500%;
+    animation-duration: 1.3s;
+    animation-delay: 1.3s;
+}
+
+.burbuja:nth-child(13) {
+    width: 40px;
+    height: 40px;
+    left: 1560%;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(14) {
+    width: 50px;
+    height: 50px;
+    left: 1800%;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(5) {
+    width: 200px;
+    height: 200px;
+    left: 1000%;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.burbuja:nth-child(15) {
+    width: 200px;
+    height: 200px;
+    left: 1100%;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+
+@keyframes burbujas {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateX(30px);
+    }
+
+    50% {
+        opacity: .4;
+    }
+
+    100% {
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@media(min-width: 725px) and (max-width: 789px){
+
+    .titulof{
+      font-size: 30px; 
+        
+    }
+    .imagenFormulario img{
+        margin-left: 70px;
+        width: 200px;
+        height: 200px;
+    }
+    
+   form{
+    margin-left: 100px;
+    margin-top: 4%;
+    width: 200px;
+    height: 300px;
+   }
+}
